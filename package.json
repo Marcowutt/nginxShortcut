@@ -3,7 +3,7 @@
 	"displayName": "nginxShortcut",
 	"description": "nginx shortcut in vscode. you can reload or configurate nginx in vscode.",
 	"version": "0.0.1",
-	"publisher": "marco",
+	"publisher": "w",
 	"engines": {
 		"vscode": "^1.40.0"
 	},
