@@ -1,0 +1,72 @@
+{
+  "name": "nginxShortcut",
+  "description": "nginx shortcut in vscode. you can reload or configurate nginx in vscode.",
+  "keywords": [
+    "nginx"
+  ],
+  "version": "0.0.1",
+  "publisher": "marco",
+  "engines": {
+    "vscode": "^1.30.0"
+  },
+  "icon": "icon.png",
+  "activationEvents": [
+    "onCommand:extension.reloadNginx",
+    "onCommand:extension.stopNginx",
+    "onCommand:extension.configurateNginx"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "nginx-shortcut configuration",
+      "properties": {
+        "nginxShortcut.nginxDir": {
+          "type": "string",
+          "description": "nginx direcory. nginx所在目录。如：D:\\Dev\\nginx-1.17.5"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension.reloadNginx",
+        "title": "reload nginx"
+      },
+      {
+        "command": "extension.stopNginx",
+        "title": "stop nginx"
+      },
+      {
+        "command": "extension.configurateNginx",
+        "title": "configurate nginx"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.reloadNginx",
+        "key": "ctrl+shift+v",
+        "mac": "cmd+shift+v"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "extension.reloadNginx",
+          "group": "navigation"
+        },
+        {
+          "command": "extension.stopNginx",
+          "group": "navigation"
+        },
+        {
+          "command": "extension.configurateNginx",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marcooo231/nginxShortcut.git"
+  }
+}
