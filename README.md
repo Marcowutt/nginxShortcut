@@ -8,7 +8,7 @@ a vscode extension that you can reload or configurate nginx in editor
 ```
 {
   ...
-  "nginxShortcut.nginxDir": "C:\\Users\\Marco\\nginx-1.17.5",
+  "nginxShortcut.nginxDir": "C:\\Users\\Marco\\nginx-1.17.5", // nginx所在目录
   ...
 }
 ```
